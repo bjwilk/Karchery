@@ -1,7 +1,5 @@
 import React from 'react';
-import yingYang from './img/yingYang.png'
 import banner from './img/banner.jpeg'
-import floorShot from './img/floorShot.jpeg'
 import styled from 'styled-components';
 
 const Navbar = styled.nav`
@@ -21,23 +19,11 @@ const Banner = styled.img`
   padding-top: 50px;
   `;
 
-const Floor = styled.img`
-width: 100%;
-height: auto;
-`
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-const Logo = styled.img`
-
-  width: 60px;
-  height: 60px;
-  background-color: white;
-
 `;
 
 const Footer = styled.footer`
