@@ -113,8 +113,8 @@ function App() {
         <h1>Individual Lessons and Corporate Events</h1>
         <p style={{ fontSize: "20px" }}>
           Whether you have always wished to learn archery, think it might be a
-          fun experience or want to have a team building event, I offer Private
-          Lessons and Group Events at <u>Ohlone Archery, San Leandro, CA</u>.
+          fun experience or want to have a team building event, I offer <strong>Private
+          Lessons</strong> and <strong>Group Events</strong> at <u>Ohlone Archery, San Leandro, CA</u>.
         </p>
         <ul>
           <li>
