@@ -58,7 +58,7 @@ function App() {
     <>
       <Navbar>
             <Container>
-              <a href="https://booksy.com/en-us/dl/show-business/979127">
+              <a href="https://eastbayarchery.simplybook.me">
                 <Button>Book</Button>
               </a>
             </Container>
