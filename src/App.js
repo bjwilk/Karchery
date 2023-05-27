@@ -2,6 +2,7 @@ import React from "react";
 import banner from "./img/banner.jpeg";
 import styled from "styled-components";
 import Accordion from "./Accordion";
+import eba from "./img/eba.jpg";
 
 const Navbar = styled.nav`
   background-color: black;
@@ -18,6 +19,17 @@ const Banner = styled.img`
   margin-top: 20px;
   padding-top: 50px;
 `;
+
+const Logo = styled.img`
+  display: block;
+  width: 100px; /* Adjust the width as per your preference */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  margin-left: auto; /* Move the image to the right side */
+  padding: 10px;
+`;
+
+
+
 
 const Container = styled.div`
   display: flex;
@@ -67,8 +79,8 @@ const Middle = styled.div`
 
 const Upper = styled.div`
   background-color: #222227;
-  padding: 10px;
-  margin: 5px;
+  padding: 20px;
+  margin: 20px;
 `;
 
 const P = styled.p`
@@ -111,24 +123,12 @@ function App() {
 
       <Middle>
         <h1>Individual Lessons and Corporate Events</h1>
-        <p style={{ fontSize: "20px" }}>
+        <p style={{ fontSize: "30px" }}>
           Whether you have always wished to learn archery, think it might be a
           fun experience or want to have a team building event, I offer <strong>Private
           Lessons</strong> and <strong>Group Events</strong> at <u>Ohlone Archery, San Leandro, CA</u>.
         </p>
-        <ul>
-          <li>
-            <span>
-              <strong>Events can accommodate up to 24 participants</strong>.
-            </span>
-          </li>
-          <li>
-            <span>
-              <strong>All participants must be 14 years of age or older</strong>
-              .
-            </span>
-          </li>
-        </ul>
+       
       </Middle>
 
       <Lower>
@@ -148,6 +148,9 @@ function App() {
         <a href="https://eastbayarchery.simplybook.me">
           <Button>Book Event</Button>
         </a>
+        <div>
+          <Logo src={eba} alt="logo"/>
+        </div>
       </Footer>
     </>
   );

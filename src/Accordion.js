@@ -23,6 +23,16 @@ class Accordion extends React.Component {
         </div>
 
         <button className="accordion" onClick={this.handleAccordionClick}>
+          Q: How much does it cost?
+        </button>
+        <div className="panel">
+          <p>
+            All prices are on the booing page. Click the Book Event button to
+            see prices.
+          </p>
+        </div>
+
+        <button className="accordion" onClick={this.handleAccordionClick}>
           Q: What does the cost cover?
         </button>
         <div className="panel">
@@ -90,11 +100,7 @@ class Accordion extends React.Component {
         </button>
         <div className="panel">
           <p>
-            We charge per person. For 4 to 10 people, the cost is $45 per
-            person. For 11 and more, the cost is $35 per person. If more than
-            the number agreed upon attend AND shoot, the difference must be
-            paid. If fewer than the agreed upon number attend, we can issue a
-            refund for the missing participants.
+            That's no problem. We can adjust the price to match the group size.
           </p>
         </div>
 
