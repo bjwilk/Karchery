@@ -3,6 +3,7 @@ import banner from "./img/banner.jpeg";
 import styled from "styled-components";
 import Accordion from "./Accordion";
 import eba from "./img/eba.jpg";
+import Target from "./img/Target.jpeg";
 
 const Navbar = styled.nav`
   background-image: url(${eba});
@@ -75,7 +76,7 @@ const Lower = styled.div`
 const Middle = styled.div`
   background-color: #a5d0cc;
   padding: 30px;
-  margin: 20px;
+  margin: 35px;
   border-radius: 10px;
 `;
 
@@ -93,6 +94,10 @@ const P = styled.p`
 
 const Back = styled.div`
   background-color: #0a0c26;
+  // background-image: url(${Target});
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
 `;
 
 function App() {
@@ -130,7 +135,7 @@ function App() {
 
       <Middle>
         <h1>Individual Lessons and Corporate Events</h1>
-        <p style={{ fontSize: "30px" }}>
+        <p style={{ fontSize: "25px" }}>
           Whether you have always wished to learn archery, think it might be a
           fun experience or want to have a team building event, I offer{" "}
           <strong>Private Lessons</strong> and <strong>Group Events</strong> at{" "}

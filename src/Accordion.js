@@ -27,7 +27,7 @@ class Accordion extends React.Component {
         </button>
         <div className="panel">
           <p>
-            All prices are on the booking page. Click the Book Event button to
+            All prices are on the booking page. Click the <u>Book Event</u> button to
             see prices.
           </p>
         </div>
