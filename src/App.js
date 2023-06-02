@@ -5,12 +5,14 @@ import Accordion from "./Accordion";
 import eba from "./img/eba.jpg";
 
 const Navbar = styled.nav`
-  background-color: black;
+  background-image: url(${eba});
+  background-size: 50% auto;
+  background-position: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 70px;
 `;
 
 const Banner = styled.img`
@@ -28,9 +30,6 @@ const Logo = styled.img`
   padding: 10px;
 `;
 
-
-
-
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -38,21 +37,22 @@ const Container = styled.div`
 `;
 
 const Footer = styled.footer`
-  background-color: #222227;
-  padding: 20px;
-  marging: 20px;
+  background-color: #16183b;
+  padding: 40px;
+  marging: 30px;
   bottom: 0;
 `;
 
 const Button = styled.button`
-  background-color: #ff2400;
+  background-color: #c42727;
   color: #53f4e6;
-  font-size: 16px;
+  font-size: 18px;
   border: 1px solid gold;
-  padding: 8px 16px;
+  padding: 15px 16px;
   margin-left: 8px;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  border-radius: 10px;
 
   &:hover {
     background-color: #ff0000;
@@ -66,21 +66,24 @@ const Button = styled.button`
 `;
 
 const Lower = styled.div`
-  background-color: #a5d0cc;
+  background-color: #323670;
   padding: 20px;
   margin: 20px;
+  border-radius: 10px;
 `;
 
 const Middle = styled.div`
   background-color: #a5d0cc;
-  padding: 20px;
+  padding: 30px;
   margin: 20px;
+  border-radius: 10px;
 `;
 
 const Upper = styled.div`
-  background-color: #222227;
-  padding: 20px;
+  background-color: #323670;
+  padding: 30px;
   margin: 20px;
+  border-radius: 10px;
 `;
 
 const P = styled.p`
@@ -88,9 +91,13 @@ const P = styled.p`
   font-size: 20px;
 `;
 
+const Back = styled.div`
+  background-color: #0a0c26;
+`;
+
 function App() {
   return (
-    <>
+    <Back>
       <Navbar>
         <Container>
           <a href="https://eastbayarchery.simplybook.me">
@@ -125,34 +132,39 @@ function App() {
         <h1>Individual Lessons and Corporate Events</h1>
         <p style={{ fontSize: "30px" }}>
           Whether you have always wished to learn archery, think it might be a
-          fun experience or want to have a team building event, I offer <strong>Private
-          Lessons</strong> and <strong>Group Events</strong> at <u>Ohlone Archery, San Leandro, CA</u>.
+          fun experience or want to have a team building event, I offer{" "}
+          <strong>Private Lessons</strong> and <strong>Group Events</strong> at{" "}
+          <u>Ohlone Archery, San Leandro, CA</u>.
         </p>
-       
       </Middle>
 
       <Lower>
-        <h1>FAQ</h1>
+        <h1 style={{ color: "#A5D0CC" }}>FAQ</h1>
         <Accordion />
       </Lower>
 
       <Footer>
         <div>
-          <a href="mailto:napoli.kari@gmail.com" style={{ color: "gold" }}>
+          <a
+            href="mailto:napoli.kari@gmail.com"
+            style={{ color: "gold", fontSize: "30px" }}
+          >
             email: napoli.kari@gmail.com
           </a>
           <a href="tel:+17075831707">
-            <p style={{ color: "gold" }}>Phone: 707-583-1707</p>
+            <p style={{ color: "gold", fontSize: "20px" }}>
+              Phone: 707-583-1707
+            </p>
           </a>
         </div>
         <a href="https://eastbayarchery.simplybook.me">
           <Button>Book Event</Button>
         </a>
         <div>
-          <Logo src={eba} alt="logo"/>
+          <Logo src={eba} alt="logo" />
         </div>
       </Footer>
-    </>
+    </Back>
   );
 }
 
