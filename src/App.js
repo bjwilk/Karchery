@@ -6,7 +6,6 @@ import eba from "./img/eba.jpg";
 import Target from "./img/Target.jpeg";
 
 const Navbar = styled.nav`
-  background-image: url(${eba});
   background-size: 50% auto;
   background-position: center;
   position: fixed;
@@ -149,7 +148,7 @@ function App() {
       </Lower>
 
       <Footer>
-        <div>
+        <div style={{ margin: "15px" }}>
           <a
             href="mailto:napoli.kari@gmail.com"
             style={{ color: "gold", fontSize: "30px" }}
@@ -161,6 +160,24 @@ function App() {
               Phone: 707-583-1707
             </p>
           </a>
+          <div style={{ padding: "10px" }}>
+            <a href="https://www.instagram.com/eastbayarchery/">
+              <img
+                src="./ig.jpg"
+                alt="instagram logo"
+                style={{ width: "50px" }}
+              />
+            </a>
+          </div>
+          <div style={{ padding: "10px", display: "flex" }}>
+            <a href="https://www.youtube.com/@eastbayarcher123">
+            <img
+              style={{ width: "130px" }}
+              src="./youtube.png"
+              alt="youtube logo"
+            />
+            </a>
+          </div>
         </div>
         <a href="https://eastbayarchery.simplybook.me">
           <Button>Book Event</Button>
