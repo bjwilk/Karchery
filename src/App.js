@@ -20,6 +20,7 @@ const Banner = styled.img`
   height: auto;
   margin-top: 20px;
   padding-top: 50px;
+  border-radius: 10%;
 `;
 
 const Logo = styled.img`
