@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { RadioGroup } from "@headlessui/react";
-import { CheckIcon } from "@heroicons/react/20/solid";
 import Navbar from "./Navbar";
 import "./index.css";
 
