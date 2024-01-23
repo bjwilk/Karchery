@@ -70,7 +70,7 @@ export default function Booking() {
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-white">
-          Choose a package based on your party size and let me know your amount.
+          Choose a package based on your party size and let me know your specific number of participants.
           Payments due at event.
         </p>
 
